@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/joincss.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+
+            </ul>
+
+            <a href="index.html" class="home"><i class="fa-solid fa-otter"></i><em class="lo">Trip Grudge</em></a>
+            <ul>
+                <li><a href="./joinForm.html">로그인</a></li>
+                <li><a href="./joinForm.html">회원가입</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="container">
+        <div class="wrap">
+            <form action="index.html" onsubmit="return ch();" method="post" id="form">
+                <div><span>ID:</span><input type="text" id="id" name="id" maxlength="15"
+                        onchange="dpch1()"><span><button type="button" onclick="dpch();">중복확인</button></span></div>
+                <div><span>PWD</span><input type="password" id="pwd" name="pwd" onchange="re();"><span><em></em></span>
+                </div>
+                <div><span></span><strong id="p"></strong><span><em></em></span></div>
+                <div><span>PWD 확인</span><input type="password" id="pwd2" name="pwd2"><span><em id="p2"></em></span>
+                </div>
+                <div><span></span><strong id="str">비밀번호와 비밀번호확인은 서로일치해야합니다</strong><span><em></em></span></div>
+                <div><span>이름:</span><input type="text" id="name" name="name" onchange="re2()"><span><em
+                            id="p3"></em></span></div>
+                <div><span>Email:</span><input type="text" id="email" name="email"
+                        onchange="changemail();"><span><em></em></span></div>
+                <div><span></span><strong id="p4"></strong><span><em></em></span></div>
+                <div><span></span><button>전송</button><span><em></em></span></div>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <em class="lo">Trip Grudge</em><br>
+        <small>서울특별시 000구 000로<br>
+            발행인:허남규 | 편집인:허남규<br>
+            대표전화:000-0000<br>
+            FAX:02-0000<br>
+            email:blah~blah~<br>
+            사업자번호:0000000-000000
+        </small>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://kit.fontawesome.com/21589beb9e.js" crossorigin="anonymous"></script>
+    <script src="js/joinjs.js"></script>
+
+
+
+</body>
+
+</html>

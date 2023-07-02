@@ -1,0 +1,187 @@
+@font-face {
+    font-family: ff;
+    src: url(font.ttf);
+}
+
+@font-face {
+    font-family: ff2;
+    src: url(청도읍성체.ttf);
+}
+
+@font-face {
+    font-family: ff3;
+    src: url(빙그레.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* font-size: 1rem; */
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+
+}
+
+li a {
+    font-size: 1rem;
+    color: black;
+    font-family: ff3;
+    font-family: ff2;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    border-top: gray solid 1px;
+    bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: gray;
+    font-size: small;
+}
+
+.la {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.lo {
+    font-size: 2rem;
+    font-family: ff;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+}
+
+.wrap {
+    width: 50%;
+}
+
+.wrap div {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.wrap span {
+    width: 20%;
+    text-align: right;
+}
+
+input[type="text"]:focus {
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(26, 115, 232, 0.2);
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px;
+}
+
+li a:hover {
+    background-color: #f14040;
+    color: white;
+}
+
+
+
+input[type="text"]:focus {
+    border-color: #17b646;
+    box-shadow: 0 0 10px #2acc37;
+}
+
+button {
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0dbb0d;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #16bd40;
+}
+
+button:active {
+    background-color: #841dc9;
+}
+
+.section2 em {
+    display: none;
+}
+
+span em {
+    font-size: 14px;
+    color: red;
+}
+
+span {
+    text-align: left;
+}
+
+.cen {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1000px) {
+    .wrap {
+        width: 80%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .lo {
+        font-size: 1rem;
+    }
+
+    .wrap span {
+        font-size: 10px;
+    }
+
+    .wrap {
+        width: 90%;
+    }
+
+
+
+}
